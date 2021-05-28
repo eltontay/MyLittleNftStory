@@ -4,7 +4,7 @@ import SuspenseWithChunkError from './components/SuspenseWithChunkError';
 import PageLoader from './components/PageLoader';
 import history from './routerHistory';
 
-const Homepage = lazy(() => import('./pages/admin/Homepage'));
+const Home = lazy(() => import('./pages/admin/Home'));
 const Login = lazy(() => import('./pages/admin/Login'));
 const Register = lazy(() => import('./pages/admin/Register'));
 
@@ -14,7 +14,7 @@ const App: React.FC = () => {
       <SuspenseWithChunkError fallback={<PageLoader />}>
         <Switch>
           <Route path="/" exact>
-            <Homepage />
+            <Home />
           </Route>
           <Route path="/Login">
             <Login />
