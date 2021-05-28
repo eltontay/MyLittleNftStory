@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 
-function Navbar() {
+function navBar() {
   return (
     <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6">
-      <div className="flex items-center flex-shrink-0 text-white mr-6">
+      <div className="flex items-center flex-shrink-0 text-white mr-6 pointer-events-auto">
         <svg
           version="1.0"
           xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
           viewBox="0 0 640 640"
           height="100px"
           width="100px"
@@ -31,6 +32,21 @@ function Navbar() {
       </div>
       <div className="w-full block flex-grow lg:flex lg:items-right lg:w-auto">
         <div className="text-sm lg:flex-grow">
+          <RouterLink to="/Auctions">Auctions</RouterLink>
+        </div>
+      </div>
+      <div className="w-full block flex-grow lg:flex lg:items-right lg:w-auto">
+        <div className="text-sm lg:flex-grow">
+          <RouterLink to="/">Story</RouterLink>
+        </div>
+      </div>
+      <div className="w-full block flex-grow lg:flex lg:items-right lg:w-auto">
+        <div className="text-sm lg:flex-grow">
+          <RouterLink to="/Artists">Artists</RouterLink>
+        </div>
+      </div>
+      <div className="w-full block flex-grow lg:flex lg:items-right lg:w-auto">
+        <div className="text-sm lg:flex-grow">
           <RouterLink to="/Login">Login</RouterLink>
         </div>
       </div>
@@ -38,4 +54,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default navBar;

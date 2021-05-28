@@ -3,7 +3,16 @@ module.exports = {
   // https://tailwindcss.com/docs/just-in-time-mode
   mode: 'jit',
   theme: {
-    extend: {},
+    cursor: {
+      auto: 'auto',
+      default: 'default',
+      pointer: 'pointer',
+      text: 'text',
+      'not-allowed': 'not-allowed',
+      crosshair: 'crosshair',
+      'zoom-in': 'zoom-in',
+      cursor: ['hover', 'focus'],
+    },
   },
   variants: {},
   plugins: [],
