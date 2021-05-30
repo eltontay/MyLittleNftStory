@@ -10,6 +10,7 @@ const Register = lazy(() => import('./pages/admin/Register'));
 const Artists = lazy(() => import('./pages/admin/Artists'));
 const Auctions = lazy(() => import('./pages/admin/Auctions'));
 const ForgotPassword = lazy(() => import('./pages/admin/ForgotPassword'));
+const About = lazy(() => import('./pages/admin/About'));
 
 const App: React.FC = () => {
   return (
@@ -33,6 +34,9 @@ const App: React.FC = () => {
           </Route>
           <Route path="/ForgotPassword">
             <ForgotPassword />
+          </Route>
+          <Route path="/About">
+            <About />
           </Route>
         </Switch>
       </SuspenseWithChunkError>
