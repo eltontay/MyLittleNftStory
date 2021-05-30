@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 
 function signinForm() {
   return (
@@ -43,9 +44,12 @@ function signinForm() {
               </label>
             </div>
             <div>
-              <a href="" className="font-medium text-sm text-blue-500">
+              <RouterLink
+                to="/ForgotPassword"
+                className="font-medium text-sm text-blue-500"
+              >
                 Forgot Password
-              </a>
+              </RouterLink>
             </div>
           </div>
           <div>
