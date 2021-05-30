@@ -43,7 +43,7 @@ function navBar() {
         </div>
         <div className="inline-block">
           <div className="text-lg lg:flex-grow">
-            <RouterLink to="/Login">Sign In</RouterLink>
+            <RouterLink to="/Login">Log In</RouterLink>
           </div>
         </div>
       </div>

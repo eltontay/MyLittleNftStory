@@ -5,7 +5,7 @@ import PageLoader from './components/PageLoader';
 import history from './routerHistory';
 
 const Home = lazy(() => import('./pages/admin/Home'));
-const Login = lazy(() => import('./pages/admin/SignIn'));
+const Login = lazy(() => import('./pages/admin/Login'));
 const Register = lazy(() => import('./pages/admin/Register'));
 const Artists = lazy(() => import('./pages/admin/Artists'));
 const Auctions = lazy(() => import('./pages/admin/Auctions'));
