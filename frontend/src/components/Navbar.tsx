@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 
-function navBar() {
+function NavBar() {
   return (
     <nav className="flex flex-wrap content-between items-center justify-between bg-teal-500 p-6 grid grid-cols-6 gap-4 font-serif">
       <div className="flex items-center flex-shrink-0 text-white mr-6 pointer-events-auto ">
@@ -63,4 +63,4 @@ function navBar() {
   );
 }
 
-export default navBar;
+export default NavBar;
