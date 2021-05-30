@@ -47,7 +47,7 @@ function navBar() {
       </div>
       <div className="w-full block flex-grow lg:flex lg:items-right lg:w-auto">
         <div className="text-sm lg:flex-grow">
-          <RouterLink to="/Login">Login</RouterLink>
+          <RouterLink to="/Login">Sign In</RouterLink>
         </div>
       </div>
     </nav>
