@@ -38,7 +38,7 @@ function navBar() {
       <div className="inline-flex space-x-12 col-start-6 place-self-center">
         <div className="inline-block">
           <div className="text-lg lg:flex-grow">
-            <RouterLink to="/Login">About</RouterLink>
+            <RouterLink to="/About">About</RouterLink>
           </div>
         </div>
         <div className="inline-block">
