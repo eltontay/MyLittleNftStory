@@ -21,7 +21,7 @@ function navBar() {
       <div className="block lg:hidden">
         <button className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
           <svg
-            className="fill-current h-3 w-3"
+            className="fill-current h-3 w-3 font-sans"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -30,22 +30,22 @@ function navBar() {
           </svg>
         </button>
       </div>
-      <div className="w-full block flex-grow lg:flex lg:items-right lg:w-auto">
+      <div className="w-full block flex-grow lg:flex lg:items-right lg:w-auto font-sans">
         <div className="text-sm lg:flex-grow">
           <RouterLink to="/Auctions">Auctions</RouterLink>
         </div>
       </div>
-      <div className="w-full block flex-grow lg:flex lg:items-right lg:w-auto">
+      <div className="w-full block flex-grow lg:flex lg:items-right lg:w-auto font-sans">
         <div className="text-sm lg:flex-grow">
           <RouterLink to="/">Story</RouterLink>
         </div>
       </div>
-      <div className="w-full block flex-grow lg:flex lg:items-right lg:w-auto">
+      <div className="w-full block flex-grow lg:flex lg:items-right lg:w-auto font-sans">
         <div className="text-sm lg:flex-grow">
           <RouterLink to="/Artists">Artists</RouterLink>
         </div>
       </div>
-      <div className="w-full block flex-grow lg:flex lg:items-right lg:w-auto">
+      <div className="w-full block flex-grow lg:flex lg:items-right lg:w-auto font-sans">
         <div className="text-sm lg:flex-grow">
           <RouterLink to="/Login">Sign In</RouterLink>
         </div>
