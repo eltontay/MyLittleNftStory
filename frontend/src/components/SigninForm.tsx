@@ -25,9 +25,9 @@ function SignInForm() {
   });
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col justify-center">
-      <div className="text-3xl font-bold text-gray-900-mt-2 text-center font-sans">
-        Log In{' '}
+    <div className="py-10 flex flex-col justify-center">
+      <div className="text-2xl font-medium text-gray-900-mt-2 text-center font-sans">
+        Log In
       </div>
       <div className="max-w-md w-full mx-auto mt-4 bg-white p-8 border border-gray-300">
         <form onSubmit={onSubmit} className="space-y-6">
@@ -42,7 +42,8 @@ function SignInForm() {
               type="text"
               {...register('username', { required: true })}
               style={{ borderColor: errors.username ? 'red' : '' }}
-              className="w-full p-2 border border-gray-300 rounded mt-1"
+              className="placeholder-gray-500 w-full p-2 border border-gray-300 rounded mt-1"
+              placeholder="Username"
             />
             {errors.username && <p>"Please enter your username."</p>}
           </div>
@@ -54,10 +55,11 @@ function SignInForm() {
               Password
             </label>
             <input
-              type="text"
+              type="password"
               {...register('password', { required: true })}
               style={{ borderColor: errors.password ? 'red' : '' }}
-              className="w-full p-2 border border-gray-300 rounded mt-1"
+              className="placeholder-gray-500 w-full p-2 border border-gray-300 rounded mt-1"
+              placeholder="Password"
             />
             {errors.password && <p>"Please enter your password."</p>}
           </div>
