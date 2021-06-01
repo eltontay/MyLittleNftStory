@@ -9,10 +9,10 @@ router.post("/register", async (req, res, next) => {
   try {
     const newUser = new UserModel(req.body);
     const result = await newUser.save();
-    return res.status(200).send(result);
+    return res.status(200).send(`User ${req.body.email} successfully registered`);
   } catch (error) {
     if (error.code == 11000) {
-      error = "Email Already Registered";
+      error = "Email already registered";
     }
     return res.status(500).send(error);
   }
@@ -28,14 +28,13 @@ router.get("/login", async (req, res, next) => {
       if (result) {
         return res.status(200).send(parseUserCredentials(user));
       } else {
-        throw Error("Wrong Password");
+        throw Error("Incorrect password");
       }
     } else {
-      throw Error("User Not Found");
+      throw Error("User not found");
     }
   } catch (error) {
-    console.log(error);
-    return res.status(500).send("Invalid Credentials");
+    return res.status(500).send("Invalid credentials");
   }
 });
 
