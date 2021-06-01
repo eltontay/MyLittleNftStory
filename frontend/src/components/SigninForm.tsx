@@ -1,14 +1,36 @@
 import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
+import { useForm } from 'react-hook-form';
 
-function signinForm() {
+/*
+  Elton Notes 30 May 2021
+  Adding cross checking validation to backend database to prevent duplicate username
+*/
+
+interface FormData {
+  username: string;
+  password: string;
+  remember: boolean;
+}
+
+function SignInForm() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormData>({ mode: 'onSubmit' });
+
+  const onSubmit = handleSubmit(({ username, password, remember }) => {
+    console.log(username, password, remember);
+  });
+
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col justify-center">
-      <div className="text-3xl font-bold text-gray-900-mt-2 text-center font-sans">
-        Sign In{' '}
+    <div className="py-10 flex flex-col justify-center">
+      <div className="text-2xl font-medium text-gray-900-mt-2 text-center font-sans">
+        Log In
       </div>
       <div className="max-w-md w-full mx-auto mt-4 bg-white p-8 border border-gray-300">
-        <form action="" className="space-y-6">
+        <form onSubmit={onSubmit} className="space-y-6">
           <div>
             <label
               htmlFor=""
@@ -18,8 +40,12 @@ function signinForm() {
             </label>
             <input
               type="text"
-              className="w-full p-2 border border-gray-300 rounded mt-1"
+              {...register('username', { required: true })}
+              style={{ borderColor: errors.username ? 'red' : '' }}
+              className="placeholder-gray-500 w-full p-2 border border-gray-300 rounded mt-1"
+              placeholder="Username"
             />
+            {errors.username && <p>"Please enter your username."</p>}
           </div>
           <div>
             <label
@@ -29,14 +55,19 @@ function signinForm() {
               Password
             </label>
             <input
-              type="text"
-              className="w-full p-2 border border-gray-300 rounded mt-1"
+              type="password"
+              {...register('password', { required: true })}
+              style={{ borderColor: errors.password ? 'red' : '' }}
+              className="placeholder-gray-500 w-full p-2 border border-gray-300 rounded mt-1"
+              placeholder="Password"
             />
+            {errors.password && <p>"Please enter your password."</p>}
           </div>
           <div className="flex items-center justify-between">
             <div className="flex items-center">
               <input
                 type="checkbox"
+                {...register('remember')}
                 className="h-4 w-4 text-blue-300 rounded"
               />
               <label
@@ -66,4 +97,4 @@ function signinForm() {
   );
 }
 
-export default signinForm;
+export default SignInForm;
