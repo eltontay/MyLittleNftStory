@@ -18,7 +18,7 @@ router.post("/register", async (req, res, next) => {
   }
 });
 
-router.get("/login", async (req, res, next) => {
+router.post("/login", async (req, res, next) => {
   const { email, password } = req.body;
   try {
     const user = await UserModel.findOne({ email: email }).exec();
