@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 
 function BouncingArrow() {
   return (
-    <div className="flex justify-center -mt-14 mb-8 cursor-pointer">
+    <div className="flex justify-center -mt-14 mb-8 cursor-pointer point-events-auto">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-5 w-5 animate-bounce w-6 h-6"
@@ -15,6 +16,7 @@ function BouncingArrow() {
           clip-rule="evenodd"
         />
       </svg>
+      <RouterLink to="/HeroLiveAuction" />
     </div>
   );
 }

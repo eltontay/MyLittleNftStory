@@ -11,6 +11,7 @@ const Artists = lazy(() => import('./pages/admin/Artists'));
 const Auctions = lazy(() => import('./pages/admin/Auctions'));
 const ForgotPassword = lazy(() => import('./pages/admin/ForgotPassword'));
 const About = lazy(() => import('./pages/admin/About'));
+const HeroLiveAuction = lazy(() => import('./templates/HeroLiveAuction'));
 
 const App: React.FC = () => {
   return (
@@ -37,6 +38,9 @@ const App: React.FC = () => {
           </Route>
           <Route path="/About">
             <About />
+          </Route>
+          <Route path="/LiveAuctions">
+            <HeroLiveAuction />
           </Route>
         </Switch>
       </SuspenseWithChunkError>

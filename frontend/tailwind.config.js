@@ -52,6 +52,7 @@ module.exports = {
       full: '9999px',
       large: '12px',
     },
+    pointerEvents: ['hover', 'focus'],
   },
   variants: {
     extend: {
