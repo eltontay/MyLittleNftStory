@@ -10,52 +10,51 @@ function Footer() {
             <h5 className="text-xl font-semibold ">mylittlenftstory</h5>
             <nav className="mt-4">
               <ul className="space-y-2">
-                <li>
-                  <div className="font-normal text-base ">
-                    A place where Cardano Nft stories are told, heard and
-                    discovered.
-                  </div>
-                </li>
+                <div className="font-normal text-base ">
+                  A place where Cardano Nft stories are told, heard and
+                  discovered.
+                </div>
               </ul>
             </nav>
           </div>
           <div>
             <h5 className="text-xl font-semibold ">Community</h5>
             <nav className="mt-4">
-              <ul className="space-y-2">
-                <li>
+              <div className="space-y-2">
+                <div>
                   <a
                     href="https://discord.com/channels/832763221144240148/832763221144240151"
-                    className="transform motion-safe:hover:scale-110 font-normal text-base "
+                    className="font-normal text-base "
                   >
                     Discord
                   </a>
-                </li>
-                <li>
+                </div>
+                <div>
                   <a
                     href="https://www.instagram.com/mylittlenftstory/"
-                    className="transform motion-safe:hover:scale-110 font-normal text-base "
+                    className="font-normal text-base "
                   >
                     Instagram
                   </a>
-                </li>
-                <li>
+                </div>
+
+                <div>
                   <a
                     href="https://twitter.com/littlenftstory/"
-                    className="transform motion-safe:hover:scale-110 font-normal text-base "
+                    className="font-normal text-base "
                   >
                     Twitter
                   </a>
-                </li>
-                <li>
+                </div>
+                <div>
                   <a
                     href="https://t.me/mylittlenftstory"
-                    className="transform motion-safe:hover:scale-110 font-normal text-base "
+                    className="font-normal text-base "
                   >
                     Telegram
                   </a>
-                </li>
-              </ul>
+                </div>
+              </div>
             </nav>
           </div>
           <div>
@@ -63,26 +62,17 @@ function Footer() {
             <nav className="mt-4">
               <ul className="space-y-2">
                 <li>
-                  <FooterLink
-                    to="/"
-                    className="transform motion-safe:hover:scale-110 font-normal text-base "
-                  >
+                  <FooterLink to="/" className="font-normal text-base ">
                     Live Auctions
                   </FooterLink>
                 </li>
                 <li>
-                  <FooterLink
-                    to="/"
-                    className="transform motion-safe:hover:scale-110 font-normal text-base "
-                  >
+                  <FooterLink to="/" className="font-normal text-base ">
                     Upcoming Auctions
                   </FooterLink>
                 </li>
                 <li>
-                  <FooterLink
-                    to="/"
-                    className="transform motion-safe:hover:scale-110 font-normal text-base "
-                  >
+                  <FooterLink to="/" className="font-normal text-base ">
                     Past Auctions
                   </FooterLink>
                 </li>
@@ -94,10 +84,7 @@ function Footer() {
             <nav className="mt-4">
               <ul className="space-y-2">
                 <li>
-                  <FooterLink
-                    to="/"
-                    className="transform motion-safe:hover:scale-110 font-normal text-base "
-                  >
+                  <FooterLink to="/" className="font-normal text-base ">
                     Email Us
                   </FooterLink>
                 </li>
@@ -105,7 +92,7 @@ function Footer() {
             </nav>
           </div>
           <div>
-            <h5 className="text-xl font-semibold ">Bidder</h5>
+            <h5 className="text-xl font-semibold ">Collectors</h5>
             <nav className="mt-4">
               <ul className="space-y-2">
                 <li>
