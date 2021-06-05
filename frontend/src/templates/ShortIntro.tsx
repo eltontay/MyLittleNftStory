@@ -2,7 +2,7 @@ import React from 'react';
 
 function ShortIntro() {
   return (
-    <div className="h-screen flex p-6 grid grid-cols-1 ">
+    <div className="h-screen flex p-6 grid grid-cols-1 divide-y divide-black">
       <div className="grid grid-cols-4 gap-x-8 flex flex-col">
         <div className="">
           <div className="text-3xl font-bold">For Artists</div>
@@ -34,13 +34,16 @@ function ShortIntro() {
             their stories with the world.
           </div>
         </div>
-        <div className="h-1/6 grid grid-cols-5 col-span-4 ">
-          <button className="col-start-3 border border-black w-full h-10 rounded-md place-items-start text-lg font-bold">
-            Share Story
-          </button>
+        <div className="h-1/6 grid grid-cols-5 col-span-4 flex flex-col content-center justify-center ">
+          <div className="col-start-3 space-y-2">
+            <button className="border border-black w-full h-10 rounded-md text-lg font-bold">
+              Share Story!
+            </button>
+            <div className="text-center">Drop us an email!</div>
+          </div>
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-x-8 flex flex-col">
+      <div className="grid grid-cols-4 gap-x-8 flex flex-col pt-6">
         <div className="">
           <div className="text-lg font-bold">
             Collectors and Artists make NFT go round!
@@ -59,7 +62,7 @@ function ShortIntro() {
           </div>
         </div>
         <div className="">
-          <div className="text-lg font-bold">Bid for the storuy</div>
+          <div className="text-lg font-bold">Bid for the story</div>
           <div className="text-lg font-medium">
             Create an account and start bidding! Escrow fee will be fixed at
             2.5% of total sale cost, subjected to future changes.
@@ -69,9 +72,12 @@ function ShortIntro() {
           <div className="text-3xl font-bold">For Collectors</div>
         </div>
         <div className="h-1/6 grid grid-cols-5 col-span-4 ">
-          <button className="col-start-3 border border-black w-full h-10 rounded-md place-items-start text-lg font-bold">
-            Start Bidding
-          </button>
+          <div className="col-start-3 space-y-2">
+            <button className="border border-black w-full h-10 rounded-md text-lg font-bold">
+              Start Bidding!
+            </button>
+            <div className="text-center ">Go to my account.</div>
+          </div>
         </div>
       </div>
     </div>

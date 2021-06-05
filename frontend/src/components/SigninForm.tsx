@@ -4,11 +4,11 @@ import { useForm } from 'react-hook-form';
 
 /*
   Elton Notes 30 May 2021
-  Adding cross checking validation to backend database to prevent duplicate username
+  Adding cross checking validation to backend database to prevent duplicate email
 */
 
 interface FormData {
-  username: string;
+  email: string;
   password: string;
   remember: boolean;
 }
@@ -20,8 +20,8 @@ function SignInForm() {
     formState: { errors },
   } = useForm<FormData>({ mode: 'onSubmit' });
 
-  const onSubmit = handleSubmit(({ username, password, remember }) => {
-    console.log(username, password, remember);
+  const onSubmit = handleSubmit(({ email, password, remember }) => {
+    console.log(email, password, remember);
   });
 
   return (
@@ -36,16 +36,16 @@ function SignInForm() {
               htmlFor=""
               className="label text-sm font-bold text-gray-600 block font-sans"
             >
-              Username
+              Email
             </label>
             <input
               type="text"
-              {...register('username', { required: true })}
-              style={{ borderColor: errors.username ? 'red' : '' }}
+              {...register('email', { required: true })}
+              style={{ borderColor: errors.email ? 'red' : '' }}
               className="placeholder-gray-500 w-full p-2 border border-gray-300 rounded mt-1"
-              placeholder="Username"
+              placeholder="email"
             />
-            {errors.username && <p>"Please enter your username."</p>}
+            {errors.email && <p>"Please enter your email."</p>}
           </div>
           <div>
             <label
