@@ -50,8 +50,8 @@ function SignInForm() {
       </div>
 
 
-        <form onSubmit={onSubmit} className="space-y-6">
-          <div>
+        <form onSubmit={onSubmit}>
+          <div className="mb-4">
             <label
               htmlFor=""
               className="label text-sm font-bold text-gray-600 block font-sans mb-2"
@@ -67,7 +67,7 @@ function SignInForm() {
             />
             {errors.email && <p>"Please enter your email."</p>}
           </div>
-          <div>
+          <div className="mb-1">
             <label
               htmlFor=""
               className="label text-sm font-bold text-gray-600 block font-sans mb-2"
@@ -107,10 +107,11 @@ function SignInForm() {
             </div>
           </div>
           <div>
-            <button className="w-full py-2 px-4 bg-black hover:bg-gray-500 rounded-md text-white text-sm font-sans">
+            <button className="w-full py-2 px-4 bg-black hover:bg-gray-500 rounded-full text-white text-sm font-sans mt-4">
               Submit
             </button>
           </div>
+          
         </form>
       </div>
     </div>
