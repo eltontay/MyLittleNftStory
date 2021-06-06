@@ -15,22 +15,25 @@ function Footer() {
 
   return (
     <div>
-      <div className="grid grid-cols-3 items-stretch place-items-center justify-center flex flex-col pt-10">
-        <form onSubmit={onSubmit} className="col-start-2 space-y-2">
-          <h2 className="text-2xl font-semibold">
-            Subscribe to receive the latest stories!
-          </h2>
-          <input
-            type="text"
-            {...register('email', { required: true })}
-            placeholder="Please enter your email address"
-            className="inline-block align-text-top w-60 h-10 rounded-l-lg border border-black"
-          />
+      <div className="grid grid-cols-1 divide-y divide-black px-6 py-6 ">
+        <div />
+        <div className="grid grid-cols-3 items-stretch place-items-center justify-center flex flex-col pt-10">
+          <form onSubmit={onSubmit} className="col-start-2 space-y-2">
+            <h2 className="text-2xl font-semibold">
+              Subscribe to receive the latest stories!
+            </h2>
+            <input
+              type="text"
+              {...register('email', { required: true })}
+              placeholder="Please enter your email address"
+              className="inline-block align-text-top w-60 h-10 rounded-l-lg border border-black"
+            />
 
-          <button className="border border-black w-36 h-10 inline-block align-text-top text-md font-bold rounded-r-lg">
-            Subscribe
-          </button>
-        </form>
+            <button className="border border-black w-36 h-10 inline-block align-text-top text-md font-bold rounded-r-lg">
+              Subscribe
+            </button>
+          </form>
+        </div>
       </div>
       <footer className="px-6 py-12">
         <div className=" mx-auto grid md:grid-cols-2 lg:grid-cols-5 gap-6">
