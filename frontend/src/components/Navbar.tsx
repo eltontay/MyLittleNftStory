@@ -3,6 +3,7 @@ import { Link as NavLink } from 'react-router-dom';
 
 /*
   need help with the middle part of the navbar, look at figma for details
+  test commit
 */
 
 function NavBar() {
