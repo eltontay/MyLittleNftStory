@@ -114,7 +114,7 @@ function SignInForm() {
           <div className="text-center mt-2">
             <p>Not a member? &nbsp;
           <RouterLink
-                to="/ForgotPassword"
+                to="/Register"
                 className="font-bold underline hover:text-gray-700"
               >
                  Create one now!
