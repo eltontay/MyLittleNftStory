@@ -11,7 +11,8 @@ function HeroAuction() {
               className="absolute h-full object-contain z-0 filter"
               src={Image1}
             ></img>
-            <p className="border border-black absolute inset-0 flex justify-center items-center text-lg break-all  z-10">
+            {/*             
+            <p className="absolute inset-0 flex justify-center items-center text-lg break-all  z-10">
               testing testing testing testing testing testing testing testing
               testing testing testing testing testing testing testing testing
               testing testing testing testing testing testing testing testing
@@ -25,7 +26,7 @@ function HeroAuction() {
               testing testing testing testing testing testing testing testing
               testing testing testing testing testing testing testing
               testingtestingtestingtestingtestingtestgintesaddwadawdawdawdasdasdfaefafdawdawfdawfawdsadasasdsas
-            </p>
+            </p> */}
           </div>
           <div className="justify-center flex flex-wrap items-center h-full w-full p-4 mx-auto px-4 row-start-1 col-span-2 text-3xl font-bold capitalize">
             A Super Cool Sword That Can Wield As a Dildo Pew pew pew
