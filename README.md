@@ -1,5 +1,7 @@
 # MyLittleNFTStory
-
+![Issues](https://img.shields.io/github/issues/eltontay/MyLittleNftStory)
+![forks](https://img.shields.io/github/forks/eltontay/MyLittleNftStory)
+![License](https://img.shields.io/github/license/eltontay/MyLittleNftStory)
 
 MyLittleNftStory is an auctioning platform on the Cardano Blockchain that gives a little voice and space to Cardano NFT creators.
 The application is created with React, TailwindCSS, TypeScript and MongoDB.  
