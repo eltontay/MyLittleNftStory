@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 
 function ShortIntro() {
   return (
@@ -36,10 +37,19 @@ function ShortIntro() {
         </div>
         <div className="h-1/6 grid grid-cols-5 col-span-4 flex flex-col content-center justify-center ">
           <div className="col-start-3 space-y-2">
-            <button className="border border-black w-full h-10 rounded-md text-lg font-bold">
+            <button className="border border-black w-full h-10 rounded-md text-lg font-bold hover:bg-black hover:text-white">
               Share Story!
             </button>
-            <div className="text-center">Drop us an email!</div>
+            <div className="text-center">
+              Drop us an &nbsp;
+              <RouterLink
+                to="/Register"
+                className="font-bold underline hover:text-gray-700 -ml-1"
+              >
+                email
+              </RouterLink>
+              !
+            </div>
           </div>
         </div>
       </div>
@@ -73,10 +83,18 @@ function ShortIntro() {
         </div>
         <div className="h-1/6 grid grid-cols-5 col-span-4 ">
           <div className="col-start-3 space-y-2">
-            <button className="border border-black w-full h-10 rounded-md text-lg font-bold">
+            <button className="border border-black w-full h-10 rounded-md text-lg font-bold hover:bg-black hover:text-white">
               Start Bidding!
             </button>
-            <div className="text-center ">Go to my account.</div>
+            <div className="text-center ">
+              Go to my &nbsp;
+              <RouterLink
+                to="/Register"
+                className="font-bold underline hover:text-gray-700 -ml-1"
+              >
+                account.
+              </RouterLink>
+            </div>
           </div>
         </div>
       </div>

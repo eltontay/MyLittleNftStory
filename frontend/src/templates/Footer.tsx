@@ -29,7 +29,7 @@ function Footer() {
               className="inline-block align-text-top w-60 h-10 rounded-l-lg border border-black"
             />
 
-            <button className="border border-black w-36 h-10 inline-block align-text-top text-md font-bold rounded-r-lg">
+            <button className="border border-black w-36 h-10 inline-block align-text-top text-md font-bold rounded-r-lg hover:bg-black hover:text-white">
               Subscribe
             </button>
           </form>

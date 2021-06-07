@@ -88,7 +88,7 @@ function Categories() {
           </div>
           <div className=""></div>
         </div>
-        <button className="my-6 col-start-3 border border-black w-full w-60 h-10 rounded-md font-bold font-lg">
+        <button className="my-6 col-start-3 border border-black w-full w-60 h-10 rounded-md font-bold font-lg hover:bg-black hover:text-white">
           Explore Categories
         </button>
       </div>
