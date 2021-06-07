@@ -13,29 +13,85 @@ function HeroLiveAuction() {
         <div />
       </div>
       <div className="h-screen p-6 grid grid-cols-4 gap-4 flex flex-col justify-center items-stretch ">
-        <div className="justify-center relative w-full border border-grey mx-auto px-4 row-span-4 grid grid-cols-1 place-items-center filter hover:blur-lg">
-          <img
-            className="absolute h-full object-contain z-0 filter"
-            src={Image2}
-          ></img>
+        <div className="justify-center relative w-full border border-grey mx-auto px-4 row-span-4 grid grid-cols-1 place-items-center filter ">
+          <img className="absolute h-full object-contain" src={Image2}></img>
+          <div className="absolute h-full w-full flex justify-center items-center opacity-0 transition-all duration-150 hover:opacity-100 backdrop-filter hover:backdrop-blur-lg hover:backdrop-brightness-200">
+            <p className="h-full w-full font-medium text-lg break-words px-10">
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing Testing
+              testingareallylongwordtomakesurethatittruncatesorthatitdoesntextendallthewaytestingareallylongwordtomakesurethatittruncatesorthatitdoesntextendalltheway
+            </p>
+          </div>
         </div>
-        <div className="justify-center relative w-full border border-grey mx-auto px-4 row-span-4 grid grid-cols-1 place-items-center filter hover:blur-lg">
-          <img
-            className="absolute h-full object-contain z-0 filter"
-            src={Image2}
-          ></img>
+        <div className="justify-center relative w-full border border-grey mx-auto px-4 row-span-4 grid grid-cols-1 place-items-center filter ">
+          <img className="absolute h-full object-contain" src={Image2}></img>
+          <div className="absolute h-full w-full flex justify-center items-center opacity-0 transition-all duration-150 hover:opacity-100 backdrop-filter hover:backdrop-blur-lg hover:backdrop-brightness-200">
+            <p className="h-full w-full font-medium text-lg break-words px-10">
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing Testing
+              testingareallylongwordtomakesurethatittruncatesorthatitdoesntextendallthewaytestingareallylongwordtomakesurethatittruncatesorthatitdoesntextendalltheway
+            </p>
+          </div>
         </div>
-        <div className="justify-center relative w-full border border-grey mx-auto px-4 row-span-4 grid grid-cols-1 place-items-center filter hover:blur-lg">
-          <img
-            className="absolute h-full object-contain z-0 filter"
-            src={Image2}
-          ></img>
+        <div className="justify-center relative w-full border border-grey mx-auto px-4 row-span-4 grid grid-cols-1 place-items-center filter ">
+          <img className="absolute h-full object-contain" src={Image2}></img>
+          <div className="absolute h-full w-full flex justify-center items-center opacity-0 transition-all duration-150 hover:opacity-100 backdrop-filter hover:backdrop-blur-lg hover:backdrop-brightness-200">
+            <p className="h-full w-full font-medium text-lg break-words px-10">
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing Testing
+              testingareallylongwordtomakesurethatittruncatesorthatitdoesntextendallthewaytestingareallylongwordtomakesurethatittruncatesorthatitdoesntextendalltheway
+            </p>
+          </div>
         </div>
-        <div className="justify-center relative w-full border border-grey mx-auto px-4 row-span-4 grid grid-cols-1 place-items-center filter hover:blur-lg">
-          <img
-            className="absolute h-full object-contain z-0 filter"
-            src={Image2}
-          ></img>
+        <div className="justify-center relative w-full border border-grey mx-auto px-4 row-span-4 grid grid-cols-1 place-items-center filter ">
+          <img className="absolute h-full object-contain" src={Image2}></img>
+          <div className="absolute h-full w-full flex justify-center items-center opacity-0 transition-all duration-150 hover:opacity-100 backdrop-filter hover:backdrop-blur-lg hover:backdrop-brightness-200">
+            <p className="h-full w-full font-medium text-lg break-words px-10">
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing testing
+              testing testing testing testing testing testing testing Testing
+              testingareallylongwordtomakesurethatittruncatesorthatitdoesntextendallthewaytestingareallylongwordtomakesurethatittruncatesorthatitdoesntextendalltheway
+            </p>
+          </div>
         </div>
         <div className=" grid grid-cols-5 col-span-4 ">
           <button className="col-start-1 border border-black w-full h-10 rounded-md font-bold text-lg hover:bg-black hover:text-white">

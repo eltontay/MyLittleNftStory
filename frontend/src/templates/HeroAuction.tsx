@@ -1,32 +1,37 @@
 import React from 'react';
 import Image1 from '../assets/Testing1.jpeg';
 
+/*
+ 7 June Elton - Need to do responsive edits especially for text overlay
+*/
+
 function HeroAuction() {
   return (
     <div>
       <div className="h-screen">
         <div className="justify-center h-4/5 p-4 mx-4 flex items-stretch items-center grid lg:grid-rows-6 lg:grid-cols-4  grid-flow-col gap-4">
-          <div className="justify-center relative flex items-center h-full w-full p-4 mx-auto px-4 row-span-full col-span-2 filter hover:blur-lg ">
+          <div className="justify-center relative flex items-center h-full w-full p-4 mx-auto px-4 row-span-full col-span-2">
             <img
-              className="absolute h-full object-contain z-0 filter"
+              className="absolute h-full object-contain filter"
               src={Image1}
             ></img>
-            {/*             
-            <p className="absolute inset-0 flex justify-center items-center text-lg break-all  z-10">
-              testing testing testing testing testing testing testing testing
-              testing testing testing testing testing testing testing testing
-              testing testing testing testing testing testing testing testing
-              testing testing testing testing testing testing testing testing
-              testing testing testing testing testing testing testing testing
-              testing testing testing testing testing testing testing testing
-              testing testing testing testing testing testing testing testing
-              testing testing testing testing testing testing testing testing
-              testing testing testing testing testing testing testing testing
-              testing testing testing testing testing testing testing testing
-              testing testing testing testing testing testing testing testing
-              testing testing testing testing testing testing testing
-              testingtestingtestingtestingtestingtestgintesaddwadawdawdawdasdasdfaefafdawdawfdawfawdsadasasdsas
-            </p> */}
+            <div className="absolute h-full w-full flex justify-center items-center opacity-0 transition-all duration-150 hover:opacity-100 backdrop-filter hover:backdrop-blur-lg hover:backdrop-brightness-200 ">
+              <p className="h-full w-full font-medium text-lg break-words px-10">
+                testing testing testing testing testing testing testing testing
+                testing testing testing testing testing testing testing testing
+                testing testing testing testing testing testing testing testing
+                testing testing testing testing testing testing testing testing
+                testing testing testing testing testing testing testing testing
+                testing testing testing testing testing testing testing testing
+                testing testing testing testing testing testing testing testing
+                testing testing testing testing testing testing testing testing
+                testing testing testing testing testing testing testing testing
+                testing testing testing testing testing testing testing testing
+                testing testing testing testing testing testing testing testing
+                testing testing testing testing testing testing testing Testing
+                testingareallylongwordtomakesurethatittruncatesorthatitdoesntextendallthewaytestingareallylongwordtomakesurethatittruncatesorthatitdoesntextendalltheway
+              </p>
+            </div>
           </div>
           <div className="justify-center flex flex-wrap items-center h-full w-full p-4 mx-auto px-4 row-start-1 col-span-2 text-3xl font-bold capitalize">
             A Super Cool Sword That Can Wield As a Dildo Pew pew pew
