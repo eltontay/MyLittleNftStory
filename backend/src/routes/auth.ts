@@ -9,7 +9,9 @@ router.post("/register", async (req, res, next) => {
   try {
     const newUser = new UserModel(req.body);
     const result = await newUser.save();
-    return res.status(200).send(`User ${req.body.email} successfully registered`);
+    return res
+      .status(200)
+      .send(`User ${req.body.email} successfully registered`);
   } catch (error) {
     if (error.code == 11000) {
       error = "Email already registered";
