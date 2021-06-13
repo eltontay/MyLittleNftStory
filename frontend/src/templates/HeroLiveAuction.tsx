@@ -16,7 +16,7 @@ function HeroLiveAuction() {
         <div className="justify-center relative w-full border border-grey mx-auto px-4 row-span-4 grid grid-cols-1 place-items-center filter ">
           <img className="absolute h-full object-contain" src={Image2}></img>
           <div className="absolute h-full w-full flex justify-center items-center opacity-0 transition-all duration-150 hover:opacity-100 backdrop-filter hover:backdrop-blur-lg hover:backdrop-brightness-200">
-            <p className="h-full w-full font-medium text-lg break-words px-10">
+            <p className="absolute h-full w-full font-medium text-lg break-words px-2 overflow-ellipsis overflow-hidden">
               testing testing testing testing testing testing testing testing
               testing testing testing testing testing testing testing testing
               testing testing testing testing testing testing testing testing
@@ -36,7 +36,7 @@ function HeroLiveAuction() {
         <div className="justify-center relative w-full border border-grey mx-auto px-4 row-span-4 grid grid-cols-1 place-items-center filter ">
           <img className="absolute h-full object-contain" src={Image2}></img>
           <div className="absolute h-full w-full flex justify-center items-center opacity-0 transition-all duration-150 hover:opacity-100 backdrop-filter hover:backdrop-blur-lg hover:backdrop-brightness-200">
-            <p className="h-full w-full font-medium text-lg break-words px-10">
+            <p className="absolute h-full w-full font-medium text-lg break-words px-2 overflow-ellipsis overflow-hidden">
               testing testing testing testing testing testing testing testing
               testing testing testing testing testing testing testing testing
               testing testing testing testing testing testing testing testing
@@ -56,7 +56,7 @@ function HeroLiveAuction() {
         <div className="justify-center relative w-full border border-grey mx-auto px-4 row-span-4 grid grid-cols-1 place-items-center filter ">
           <img className="absolute h-full object-contain" src={Image2}></img>
           <div className="absolute h-full w-full flex justify-center items-center opacity-0 transition-all duration-150 hover:opacity-100 backdrop-filter hover:backdrop-blur-lg hover:backdrop-brightness-200">
-            <p className="h-full w-full font-medium text-lg break-words px-10">
+            <p className="absolute h-full w-full font-medium text-lg break-words px-2 overflow-ellipsis overflow-hidden">
               testing testing testing testing testing testing testing testing
               testing testing testing testing testing testing testing testing
               testing testing testing testing testing testing testing testing
@@ -76,7 +76,7 @@ function HeroLiveAuction() {
         <div className="justify-center relative w-full border border-grey mx-auto px-4 row-span-4 grid grid-cols-1 place-items-center filter ">
           <img className="absolute h-full object-contain" src={Image2}></img>
           <div className="absolute h-full w-full flex justify-center items-center opacity-0 transition-all duration-150 hover:opacity-100 backdrop-filter hover:backdrop-blur-lg hover:backdrop-brightness-200">
-            <p className="h-full w-full font-medium text-lg break-words px-10">
+            <p className="absolute h-full w-full font-medium text-lg break-words px-2 overflow-ellipsis overflow-hidden">
               testing testing testing testing testing testing testing testing
               testing testing testing testing testing testing testing testing
               testing testing testing testing testing testing testing testing

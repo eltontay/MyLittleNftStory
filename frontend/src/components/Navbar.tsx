@@ -8,8 +8,8 @@ import { Link as NavLink } from 'react-router-dom';
 
 function NavBar() {
   return (
-    <nav className="flex flex-wrap content-between items-center justify-between bg-teal-500 p-6 grid grid-cols-6 gap-4 font-serif ">
-      <div className="flex items-center flex-shrink-0 text-white mr-6 pointer-events-auto ">
+    <nav className="flex flex-row justify-between items-center p-6 grid grid-cols-3 gap-4 font-serif ">
+      <div className="flex justify-self-start flex-shrink-0 text-white">
         <NavLink to="/">
           <svg
             version="1.0"
@@ -25,7 +25,7 @@ function NavBar() {
           </svg>
         </NavLink>
       </div>
-      <div className="flex place-items-stretch space-x-6 col-start-3 col-end-5 place-self-center rounded-md border-black border p-3 ">
+      <div className="flex justify-self-center p-3 space-x-4 rounded-md border-black border hidden lg:block">
         <div className="inline-block transform motion-safe:hover:scale-110 rounded-md hover:border-black border p-3 hover:bg-black hover:text-white">
           <div className="text-lg lg:flex-grow ">
             <NavLink to="/Auctions">Auctions</NavLink>
@@ -42,7 +42,7 @@ function NavBar() {
           </div>
         </div>
       </div>
-      <div className="inline-flex space-x-12 col-start-6 place-self-center">
+      <div className="flex justify-self-end p-3 space-x-12 hidden lg:block ">
         <div className="inline-block transform motion-safe:hover:scale-110 hover:border-b-2 border-black ">
           <div className="text-lg lg:flex-grow">
             <NavLink to="/About">About</NavLink>
@@ -53,18 +53,6 @@ function NavBar() {
             <NavLink to="/Login">Log In</NavLink>
           </div>
         </div>
-      </div>
-      <div className="block lg:hidden">
-        <button className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-          <svg
-            className="fill-current h-3 w-3 font-sans"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-        </button>
       </div>
     </nav>
   );
