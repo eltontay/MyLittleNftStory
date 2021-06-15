@@ -3,7 +3,7 @@ import { Link as RouterLink } from 'react-router-dom';
 
 function BouncingArrow() {
   return (
-    <div className="flex justify-center mb-8 cursor-pointer point-events-auto mt-56 md:-mt-16">
+    <div className="flex justify-center mb-8 cursor-pointer point-events-auto mt-64 md:-mt-16">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-5 w-5 animate-bounce w-6 h-6"

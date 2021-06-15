@@ -15,24 +15,26 @@ function Footer() {
 
   return (
     <div>
-      <div className="grid grid-cols-1 divide-y divide-black px-6 py-6 ">
+      <div className="grid grid-cols-1 divide-y divide-black px-6 py-6 flex">
         <div />
-        <div className="grid grid-cols-3 items-stretch place-items-center justify-center flex flex-col pt-10">
-          <form onSubmit={onSubmit} className="col-start-2 space-y-2">
-            <h2 className="text-2xl font-semibold">
-              Subscribe to receive the latest stories!
-            </h2>
-            <input
-              type="text"
-              {...register('email', { required: true })}
-              placeholder="Please enter your email address"
-              className="inline-block align-text-top w-60 h-10 rounded-l-lg border border-black"
-            />
+        <div className="flex place-items-center justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 items-stretch flex flex-col pt-10">
+            <form onSubmit={onSubmit} className="col-start-2 space-y-2">
+              <h2 className="text-2xl font-semibold">
+                Subscribe to receive the latest stories!
+              </h2>
+              <input
+                type="text"
+                {...register('email', { required: true })}
+                placeholder="Please enter your email address"
+                className="inline-block align-text-top w-60 h-10 rounded-l-lg border border-black"
+              />
 
-            <button className="border border-black w-36 h-10 inline-block align-text-top text-md font-bold rounded-r-lg hover:bg-black hover:text-white">
-              Subscribe
-            </button>
-          </form>
+              <button className="border border-black w-36 h-10 inline-block align-text-top text-md font-bold rounded-r-lg hover:bg-black hover:text-white">
+                Subscribe
+              </button>
+            </form>
+          </div>
         </div>
       </div>
       <footer className="px-6 py-12">
@@ -146,8 +148,8 @@ function Footer() {
             </nav>
           </div>
         </div>
-        <div className=" mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 mt-16 lg:mt-20 border-t-2pt-8 ">
-          <div className="text-sm space-y-4 md:space-y-1 text-center md:text-left">
+        <div className=" mx-auto flex flex-col md:flex-row justify-between  space-y-4 mt-16 lg:mt-20 border-t-2pt-8 ">
+          <div className="text-sm space-y-4 md:space-y-1 text-left">
             <p>&copy;2021 mylittlenftstory. All rights reserved.</p>
             <nav className="flex items-center space-x-2">
               <a

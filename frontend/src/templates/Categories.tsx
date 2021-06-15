@@ -10,7 +10,7 @@ function Categories() {
         </div>
       </div>
       <div className="grid grid-cols-5 gap-4 px-6">
-        <div className="h-60 w-60 grid grid-rows-3 divide-y divide-black border border-black rounded-md">
+        <div className="h-60 w-full grid grid-rows-3 divide-y divide-black border border-black rounded-md">
           <div className="px-4 flex flex-wrap content-center space-x-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@ function Categories() {
           </div>
           <div className=""></div>
         </div>
-        <div className="h-60 w-60 grid grid-rows-3 divide-y divide-black border border-black rounded-md">
+        <div className="h-60 w-full grid grid-rows-3 divide-y divide-black border border-black rounded-md">
           <div className="px-4 flex flex-wrap content-center space-x-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@ function Categories() {
           </div>
           <div className=""></div>
         </div>
-        <div className="h-60 w-60 grid grid-rows-3 divide-y divide-black border border-black rounded-md">
+        <div className="h-60 w-full grid grid-rows-3 divide-y divide-black border border-black rounded-md">
           <div className="px-4 flex flex-wrap content-center space-x-2 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -64,14 +64,14 @@ function Categories() {
           </div>
           <div className=""></div>
         </div>
-        <div className="h-60 w-60 grid grid-rows-3 divide-y divide-black border border-black rounded-md">
+        <div className="h-60 w-full grid grid-rows-3 divide-y divide-black border border-black rounded-md">
           <div className="px-2 flex flex-wrap content-center ">
             <i className="fa fa-futbol-o fa-lg" aria-hidden="true"></i>
             <div className=" font-bold text-lg">Sports</div>
           </div>
           <div className=""></div>
         </div>
-        <div className="h-60 w-60 grid grid-rows-3 divide-y divide-black border border-black rounded-md">
+        <div className="h-60 w-full grid grid-rows-3 divide-y divide-black border border-black rounded-md">
           <div className="px-4 flex flex-wrap content-center space-x-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
