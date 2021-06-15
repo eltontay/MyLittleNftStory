@@ -59,7 +59,7 @@ function ShortIntro() {
           </div>
         </div>
         <div className="h-screen md:h-full grid grid-rows-5 md:grid-rows-1 grid-cols-1 md:grid-cols-4 gap-x-8 flex flex-col pt-6">
-          <div className="-mt-12 md:m-0">
+          <div className="-mt-8 md:m-0">
             <div className="text-lg font-bold">
               Collectors and Artists make NFT go round!
             </div>
@@ -69,7 +69,7 @@ function ShortIntro() {
               make each story count!
             </div>
           </div>
-          <div className="-mt-12 md:m-0">
+          <div className="-mt-4 md:m-0">
             <div className="text-lg font-bold">Looking to resell an NFT?</div>
             <div className="text-lg font-medium">
               Even a collector has a story. If you have a story for an NFT,
@@ -77,7 +77,7 @@ function ShortIntro() {
               collectors.
             </div>
           </div>
-          <div className="-mt-12 md:m-0">
+          <div className="-mt-4 md:m-0">
             <div className="text-lg font-bold">Bid for the story</div>
             <div className="text-lg font-medium">
               Create an account and start bidding! Escrow fee will be fixed at

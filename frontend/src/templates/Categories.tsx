@@ -9,9 +9,9 @@ function Categories() {
           Discover Stories by Categories
         </div>
       </div>
-      <div className="grid grid-cols-5 gap-4 px-6">
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-4 px-6">
         <div className="h-60 w-full grid grid-rows-3 divide-y divide-black border border-black rounded-md">
-          <div className="px-4 flex flex-wrap content-center space-x-2">
+          <div className="inline-block px-4 flex flex-wrap content-center space-x-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -23,12 +23,12 @@ function Categories() {
               <path d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
               <path d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z" />
             </svg>
-            <div className=" font-bold text-lg">Art</div>
+            <div className="inline-block font-bold text-lg">Art</div>
           </div>
           <div className=""></div>
         </div>
         <div className="h-60 w-full grid grid-rows-3 divide-y divide-black border border-black rounded-md">
-          <div className="px-4 flex flex-wrap content-center space-x-2">
+          <div className="inline-block px-4 flex flex-wrap content-center space-x-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -40,7 +40,7 @@ function Categories() {
               <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
               <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z" />
             </svg>
-            <div className=" font-bold text-lg">Trading Cards</div>
+            <div className="inline-block font-bold text-lg">Trading Cards</div>
           </div>
           <div className=""></div>
         </div>
@@ -71,7 +71,7 @@ function Categories() {
           </div>
           <div className=""></div>
         </div>
-        <div className="h-60 w-full grid grid-rows-3 divide-y divide-black border border-black rounded-md">
+        <div className="hidden h-60 w-full md:grid grid-rows-3 divide-y divide-black border border-black rounded-md">
           <div className="px-4 flex flex-wrap content-center space-x-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -88,9 +88,11 @@ function Categories() {
           </div>
           <div className=""></div>
         </div>
-        <button className="my-6 col-start-3 border border-black w-full w-60 h-10 rounded-md font-bold font-lg hover:bg-black hover:text-white">
-          Explore Categories
-        </button>
+        <div className="flex justify-center col-span-full md:col-start-3">
+          <button className="my-6 border border-black w-full w-60 h-10 rounded-md font-bold font-lg hover:bg-black hover:text-white">
+            Explore Categories
+          </button>
+        </div>
       </div>
     </div>
   );
