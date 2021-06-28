@@ -2,7 +2,7 @@ import React from 'react';
 import NavBar from '../../components/Navbar';
 import FilterBar from '../../components/FilterBar';
 import ArtistSearchBar from '../../components/ArtistSearchBar';
-
+import ArtistCard from '../../components/ArtistCard';
 
 export default function ArtistsPage() {
   return (
@@ -10,10 +10,8 @@ export default function ArtistsPage() {
       <NavBar />
       <FilterBar />
       <ArtistSearchBar />
-      <h1>some padding</h1>x
-      <h1>Start Square template</h1>
-      <h1>........Image place holder</h1>
-      <h1>........Artistlogo</h1>
+      <ArtistCard />
+     
     </div>
   );
 }
